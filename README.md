@@ -9,6 +9,7 @@ To write a python program for creating Chat using TCP Sockets Links.
 4. Send and receive the message using the send function in socket.
 ## PROGRAM
 ###SERVER
+```
 import socket
 
 HOST = '127.0.0.1'  
@@ -25,8 +26,9 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             if not data:
                 break
             conn.sendall(data)
-
+```
 ###CLIENT
+```
 import socket
 
 HOST = '127.0.0.1'  
@@ -39,6 +41,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         s.sendall(message.encode())
         data = s.recv(1024)
         print('Received', repr(data.decode()))
+```
 
 ## OUPUT
 ![alt text](<Screenshot 2024-04-03 101947.png>)
