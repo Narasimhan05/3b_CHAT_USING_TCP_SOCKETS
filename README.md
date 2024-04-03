@@ -31,7 +31,7 @@ while True:
  msg=input("Server > ")
  c.send(msg.encode())
 ```
-## OUPUT
+## OUTPUT
 ###CLIENT
 ![Screenshot 2024-04-03 112058](https://github.com/Narasimhan05/3b_CHAT_USING_TCP_SOCKETS/assets/132819871/0ff2bf7a-933a-42e5-972f-2d2c3c20f51e)
 ###SERVER
